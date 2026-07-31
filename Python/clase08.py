@@ -87,28 +87,14 @@ mi_diccionario = {
 }
 
 print(f"Mi nombre es {mi_diccionario['nombre']} tengo {mi_diccionario['edad']} años y vivo en {mi_diccionario['direccion']}.")
+
 # %%
 
-respuestas = {
-    "hola chimuelo" : "hola Sebastian!",
-    "como estas?" : "bien y tu?",
-    "yo estoy bien." : "me alegro Sebastian!",
-    "que tal tu dia?" : "mi dia genial, aqui enseñandote a Programar!",
-    "me siento triste" : "no pasa nada sebastian!, todos aveces nos sentimos asi, animo hermano!!",
-    "chau chimuelo" : "chau Sebastian!, que tengas un lindo dia.",
+capitales = {
+    "Argentina" : "Buenos Aires",
+    "España" : "Madrid",
+    "Francia" : "Paris",
 }
 
-
-while True:
-    
-    pregunta = input("Vos: ").strip().lower()
-    
-    if pregunta in respuestas:
-        print(f"Chimuelo: {respuestas[pregunta]} ")
-    else:
-        print("No entendi.")
-        break
-        
-        
-
-# %%
+for pais, ciudad in capitales.items():
+    print(f"{pais} es el pais y {ciudad} es la capital.")
