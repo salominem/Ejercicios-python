@@ -18,7 +18,7 @@ print(conteo)
 
 # %%
 #1
-especialidades = ["Clínica General", "Pediatría", "Traumatología", "Cardiología"]
+especialidades = ["Clínica General", "Pediatria", "Traumatología", "Cardiología"]
 
 #2
 lista = [{
@@ -46,9 +46,9 @@ nombre = ""
 
 while nombre != "cerrar":
     
-    nombre = input("Ingrese paciente: ").strip().title()
+    nombre = input("Ingrese paciente: ").strip().lower()
     if nombre != "cerrar":
-        agregar_especialidad = input("Ingrese especialidad: ").strip().title()
+        agregar_especialidad = input("Ingrese especialidad: ").strip()
         
         nuevo_paciente = {
             "nombre" : nombre,
@@ -65,12 +65,8 @@ conteo = {}
 
 for paciente in lista:
     if paciente["especialidad"] in especialidades:
-
-        if paciente["especialidad"] not in conteo:
-            conteo[paciente["especialidad"]] = 1
-
-        else:
-            conteo[paciente["especialidad"]] += 1
+        especialidad = paciente["especialidad"]
+        conteo[especialidad] = conteo.get(especialidad, 0) + 1
 #6
 
 for paciente in lista:
@@ -79,3 +75,4 @@ for paciente in lista:
     print(f"Estado: {paciente['atendido']}")
     print("-------------------------")
 print(f"Resumen de pacientes atendidos por especialidad: {conteo}")
+# %%
