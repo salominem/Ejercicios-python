@@ -139,7 +139,6 @@ for letra in palabra:
     letras += 1
 print(f"la palabra {palabra} tiene {letras} letras..")
 # %%
-
 tabla = int(input("Ingrese un numero: "))
 print(f"Tabla del {tabla}")
 for i in range(1,11):

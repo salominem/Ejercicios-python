@@ -15,10 +15,67 @@ for letra in texto.lower():
     if letra in conteo:
         conteo[letra] += 1 
 print(conteo)
- # %%
 
-numero = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
-
-for numero in range(2,22,2):
-        print(numero)
 # %%
+#1
+especialidades = ["Clínica General", "Pediatría", "Traumatología", "Cardiología"]
+
+#2
+lista = [{
+    "nombre": "Marcos",
+    "especialidad": "Pediatría", 
+    "atendido": False
+},
+{
+    "nombre": "Julia",
+    "especialidad": "Cardiología",
+    "atendido": False
+}]
+
+#3
+
+for paciente in lista:
+    if paciente["especialidad"] in especialidades:
+        paciente["atendido"] = True
+        print(f"{paciente['nombre']} fue atendido.")
+    else:
+        print(f"{paciente['nombre']} quedó sin atender.")
+        
+#4
+nombre = ""
+
+while nombre != "cerrar":
+    
+    nombre = input("Ingrese paciente: ").strip().title()
+    if nombre != "cerrar":
+        agregar_especialidad = input("Ingrese especialidad: ").strip().title()
+        
+        nuevo_paciente = {
+            "nombre" : nombre,
+            "especialidad" : agregar_especialidad,
+            "atendido" : False
+         }
+        if nuevo_paciente["especialidad"] in especialidades:
+            nuevo_paciente["atendido"] = True
+        lista.append(nuevo_paciente)
+    
+#5
+
+conteo = {}
+
+for paciente in lista:
+    if paciente["especialidad"] in especialidades:
+
+        if paciente["especialidad"] not in conteo:
+            conteo[paciente["especialidad"]] = 1
+
+        else:
+            conteo[paciente["especialidad"]] += 1
+#6
+
+for paciente in lista:
+    print(f"Paciente: {paciente['nombre']}")
+    print(f"Especialidad: {paciente['especialidad']}")
+    print(f"Estado: {paciente['atendido']}")
+    print("-------------------------")
+print(f"Resumen de pacientes atendidos por especialidad: {conteo}")
