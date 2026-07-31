@@ -369,46 +369,43 @@
         
 # print("fin")
 
+# print("=====Clinica=====")
+
+# #1
+# especialidades = ("Clínica General", "Pediatría", "Traumatología", "Cardiología")
+# #2
+# pacientes = ["Marcos", "Julia", "Marcos"]
+# #3
+# registro_unico = set(pacientes) 
+# #4
+# atendidos = []
+
+# for paciente in pacientes:
+#     if paciente in atendidos:
+#         print(f"\n⚠ {paciente} Ya fue atendido")
+#     else:
+#         print(f"\n{paciente} está siendo atendido")
+#         atendidos.append(paciente)
+    
+# #5
+# pacientes_turno_tarde = []
+# paciente_nuevo = ""
+
+# while paciente_nuevo != "cerrar":
+   
+#     paciente_nuevo = input("\nIngrese un nuevo paciente o cerrar para salir. ").strip().lower()
+#     if paciente_nuevo != "cerrar":
+#         pacientes_turno_tarde.append(paciente_nuevo)
+# #6
+# print("=========Reporte final ==========")
+# print(f"Total de pacientes atendidos: {len(pacientes)}")
+# print(f"Total de pacientes unicos registrados: {len(registro_unico)}")
+# print(f"Listado del turno tarde: {pacientes_turno_tarde}")
+
+
+
 # numero = int(input("Ingresa un numero: "))
 # print(f"Tabla de Multiplicar del {numero}: ")
 
 # for i in range(1,11):
 #     print(f"{numero} x {i} = {numero * i}")     
-
-print("=====Clinica=====")
-
-#1
-especialidades = ("Clínica General", "Pediatría", "Traumatología", "Cardiología")
-
-#2
-
-pacientes = ["Marcos", "Julia", "Marcos"]
-
-#3
-registro_unico = set(pacientes) 
-
-#4
-
-atendidos = []
-
-for paciente in pacientes:
-    if paciente in atendidos:
-        print(f"⚠ {paciente} Ya fue atendido")
-    else:
-        print(f"{paciente} está siendo atendido")
-        atendidos.append(paciente)
-    
-#5
-pacientes_turno_tarde = []
-paciente_nuevo = ""
-
-while paciente_nuevo != "cerrar":
-   
-    paciente_nuevo = input("Ingrese un nuevo paciente: ").strip().lower()
-    if paciente_nuevo != "cerrar":
-        pacientes_turno_tarde.append(paciente_nuevo)
-
-#6
-print(f"Total de pacientes atendidos: {len(pacientes)}")
-print(f"Total de pacientes unicos registrados: {len(registro_unico)}")
-print(f"Listado del turno tarde: {pacientes_turno_tarde}")
