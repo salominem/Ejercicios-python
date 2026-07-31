@@ -98,3 +98,50 @@ capitales = {
 
 for pais, ciudad in capitales.items():
     print(f"{pais} es el pais y {ciudad} es la capital.")
+    
+#%%
+numero = [1,2,3,4,5,6,7,8,9,10]
+
+for numero in range(1,11):
+    print(numero)
+# %%
+numero = [1,2,3,4,5,6,7,8,9,10]
+
+for numero in range(10,0,-1):
+    print(numero)
+# %%
+numero = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+
+for numero in range(1,21):
+    if numero %2 == 0:
+        print(numero)
+
+numero = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+
+for numero in range(2,22,2):
+        print(numero)
+        
+# %%
+suma = 0
+for numero in range(1,11):
+    suma = suma + numero 
+print(suma)
+    
+# %%
+palabra = input("Ingrese una palabra: ")
+
+for letra in palabra:
+    print(letra)
+# %%
+palabra = input("Ingrese una palabra: ")
+letras = 0
+for letra in palabra:
+    letras += 1
+print(f"la palabra {palabra} tiene {letras} letras..")
+# %%
+
+tabla = int(input("Ingrese un numero: "))
+print(f"Tabla del {tabla}")
+for i in range(1,11):
+    print(f"{tabla} x {i} = {tabla * i} ")
+# %%
