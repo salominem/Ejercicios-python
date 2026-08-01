@@ -18,7 +18,7 @@ print(conteo)
 
 # %%
 #1
-especialidades = ["Clínica General", "Pediatria", "Traumatología", "Cardiología"]
+especialidades = ["Clínica General", "Pediatría", "Traumatología", "Cardiología"]
 
 #2
 lista = [{
@@ -75,4 +75,12 @@ for paciente in lista:
     print(f"Estado: {paciente['atendido']}")
     print("-------------------------")
 print(f"Resumen de pacientes atendidos por especialidad: {conteo}")
+
+
+#%%
+
+j_b_alberdi = ("basquet","futbol","voley","handball") 
+
+print(j_b_alberdi[1])
+
 # %%
