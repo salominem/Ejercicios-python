@@ -84,22 +84,44 @@ print("Deportes disponibles: ")
 print(j_b_alberdi)
 
 lista_jugadores = []
-nombre = ""
 
-while nombre != "cerrar":
-    nombre = input("Ingrese nombre del jugador: ").lower().strip()
+opcion = ""
+
+while opcion != "4":
+    print("\n==Menu==")
+    print("\n1. Ver lista.")
+    print("2. Agregar jugador.")
+    print("3. Eliminar jugador.")
+    print("4. Salir.")
+    opcion = input("Ingrese una opción: ")
     
-    if nombre != "cerrar":
-        deporte = input("Ingrese para que deporte desea inscribirlo: ").lower().strip()
-    
+    if opcion == "1":
+        for jugador in lista_jugadores:
+            print("\n{Lista de jugadores y su deporte: ")
+            print(f"{jugador['nombre']} - {jugador['deporte']}")
+        
+    elif opcion == "2":
+        nombre = input("Ingrese nombre del jugador: ").lower().strip()
+        deporte = input("Ingrese para que deporte desea inscribirlo: ").lower().strip() 
         nuevo_jugador = {
             "nombre" : nombre,
             "deporte" : deporte
         }      
-        
         lista_jugadores.append(nuevo_jugador)
-       
-for jugador in lista_jugadores:
-    print(f"Nuevo jugador {jugador["nombre"]} y jugará {jugador["deporte"]}!!")
-
+        print("\nJugador agregado con exito!")
+        
+    elif opcion == "3":
+        eliminar = input("Que jugador desea eliminar? ")
+        for jugador in lista_jugadores:
+            if jugador["nombre"] == eliminar:
+                lista.remove(eliminar)
+                print("\nJugador eliminado con exito!")
+                
+    elif opcion == "4":
+        print("Saliendo del sistema...")
+    else:
+        print("Opcion invalida, intente nuevamente.")
+        
+        
+    
 # %%
