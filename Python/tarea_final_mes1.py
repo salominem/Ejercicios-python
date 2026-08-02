@@ -96,8 +96,8 @@ while opcion != "4":
     opcion = input("Ingrese una opción: ")
     
     if opcion == "1":
+        print("\nLista de jugadores y su deporte: ")
         for jugador in lista_jugadores:
-            print("\n{Lista de jugadores y su deporte: ")
             print(f"{jugador['nombre']} - {jugador['deporte']}")
         
     elif opcion == "2":
@@ -114,8 +114,9 @@ while opcion != "4":
         eliminar = input("Que jugador desea eliminar? ")
         for jugador in lista_jugadores:
             if jugador["nombre"] == eliminar:
-                lista.remove(eliminar)
+                lista.remove(jugador)
                 print("\nJugador eliminado con exito!")
+                break
                 
     elif opcion == "4":
         print("Saliendo del sistema...")
