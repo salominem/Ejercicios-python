@@ -78,9 +78,28 @@ print(f"Resumen de pacientes atendidos por especialidad: {conteo}")
 
 
 #%%
-
+print("=====Club Juan Bautista Alberdi=====")
 j_b_alberdi = ("basquet","futbol","voley","handball") 
+print("Deportes disponibles: ")
+print(j_b_alberdi)
 
-print(j_b_alberdi[1])
+lista_jugadores = []
+nombre = ""
+
+while nombre != "cerrar":
+    nombre = input("Ingrese nombre del jugador: ").lower().strip()
+    
+    if nombre != "cerrar":
+        deporte = input("Ingrese para que deporte desea inscribirlo: ").lower().strip()
+    
+        nuevo_jugador = {
+            "nombre" : nombre,
+            "deporte" : deporte
+        }      
+        
+        lista_jugadores.append(nuevo_jugador)
+       
+for jugador in lista_jugadores:
+    print(f"Nuevo jugador {jugador["nombre"]} y jugará {jugador["deporte"]}!!")
 
 # %%
