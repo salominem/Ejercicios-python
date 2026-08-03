@@ -1,4 +1,6 @@
-print("=====Calculadora Salominem=====")
+print("===============================")
+print("=    Calculadora Salominem    =")
+print("===============================")
 
 numero_1 = int(input("\nIngrese el primer numero: "))
 numero_2 = int(input("Ingrese el segundo numero: "))
