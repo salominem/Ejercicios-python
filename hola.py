@@ -25,3 +25,22 @@
 # else:
 #     print("Hace frio")
 
+#Imprime el 1 del [1,2]
+# l = [1, 2, [1 , 2]]
+# my_var = l[2][1]
+# print(my_var)
+
+#Imprime 1 y 12
+# l = [1, 12 , True , "Hola mundo"]
+# my_var = l[0:2]
+# print(my_var)
+
+#Imprime del true hasta el final...
+# l = [1, 12 , True , "Hola mundo"]
+# my_var = l[2:]
+# print(my_var)
+
+#Imprime 1, 12, true
+# l = [1, 12 , True , "Hola mundo"]
+# my_var = l[:3]
+# print(my_var)
