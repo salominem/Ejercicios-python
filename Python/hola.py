@@ -98,3 +98,5 @@
 
 # for prenda in ropa:
 #     print(f"Tu ropero tiene: {prenda}")
+
+# print("Hola Pancho")
