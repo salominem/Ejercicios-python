@@ -146,26 +146,27 @@ pacientes = [
 
 for paciente in pacientes:
     if paciente["especialidad"] in especialidades:
-        paciente["atendido" : True]
-        print(f"{paciente["nombre"]}fue atendido en {paciente["especialidad"]}")
+        paciente["atendido"] = True
+        print(f"{paciente['nombre']} fue atendido en {paciente['especialidad']}")
     else:
-        print(f"{paciente["nombre"]}no fue atendido debido que la especialidad {paciente["especialidad"]} no esta en la lista")
+        print(f"{paciente['nombre']} no fue atendido debido que la especialidad {paciente['especialidad']} no esta en la lista")
         
 nombre_pacientes = ""
 corte = "cerrar"
 
-while nombre_pacientes.lower != corte:
+while nombre_pacientes.lower() != corte:
     nombre_paciente = input("Ingrese el nombre del paciente: ").strip().lower()
     
-    if nombre_paciente != corte:
-        especialidad_paciente = input("Ingrese la especialidad: ").strip().title()
+    if nombre_paciente == corte:
+        break
+    especialidad_paciente = input("Ingrese la especialidad: ").strip().title()
         
     nuevo_paciente = {"nombre": nombre_paciente, "especialidad" : especialidad_paciente, "atendido" : False}
         
     if especialidad_paciente in especialidades:
-        nuevo_paciente["atendido" : True]
+        nuevo_paciente["atendido"] = True
     else:
-        print(f"{nombre_paciente}no fue atendido debido que la especialidad {especialidad_paciente} no esta en la lista")
+        print(f"{nombre_paciente} no fue atendido debido que la especialidad {especialidad_paciente} no esta en la lista")
     
     pacientes.append(nuevo_paciente)
     
@@ -175,8 +176,7 @@ while nombre_pacientes.lower != corte:
     for paciente in pacientes:
         if paciente["atendido"]:
             especialidad = paciente["especialidad"]
-            conteo_especialidad[especialidad] = conteo_especialidad.get
-            (especialidad, 0) + 1
+            conteo_especialidad[especialidad] = conteo_especialidad.get(especialidad, 0) + 1
             
 print("Reporte final")
 
@@ -188,10 +188,60 @@ for paciente in pacientes:
     
     estado = "Atendido" if paciente["atendido"] else "Pendiente"
         
-    print(f"{paciente ["nombre"]}: {estado}")
+    print(f"{paciente ['nombre']}: {estado}")
     
-print("Resumen de cantidad de pacientes ")
+print("Resumen de cantidad de pacientes ") 
 for especialidad, cantidad in conteo_especialidad.items():
     print(f"{especialidad}: {cantidad} pacientes atendidos")
 
     
+# %%
+
+datos = {"numero" : 1, "nombre" : "Julio"}
+
+copia = datos.copy()
+
+copia["numero"] = 2
+
+print(copia)
+print(datos)
+# %%
+
+precios = [2500, 1800, 3000]
+
+precios_con_descuentos = []
+
+for precio in precios:
+    precios_con_descuentos.append(precio * 0.9)
+    
+print(precios_con_descuentos)
+
+# %%
+
+precios_con_descuentos = [precio * 0.9 for precio in precios]
+print(precios_con_descuentos)
+
+# %%
+clientes = ["Ana", "Jorge", "Julia"]
+
+clientes_may = [cliente.upper() for cliente in clientes]
+
+print(clientes_may)
+# %%
+
+pacientes = [
+    {"nombre" : "Marcos", "especialidad" : "Pediatría", "atendido" : False},
+    {"nombre" : "Julia", "especialidad" : "Cardiología", "atendido" : False}
+]
+
+nombres = [paciente["nombre"] for paciente in pacientes]
+print(nombres)
+# %%
+
+inventario = [("cafe", 45), ("medialuna", 0), ("tostado", 10)]
+
+productos = [ producto for producto, cantidad in inventario if cantidad > 0 ]
+print(productos)
+
+# %%
+
