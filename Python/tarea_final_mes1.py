@@ -126,3 +126,72 @@ while opcion != "4":
         
     
 # %%
+
+frase = "Me gusta progamar en python. Es genial"
+
+conteo = {"a" : 0,"e" : 0,"i" : 0,"o" : 0,"u" : 0,}
+
+for letra in frase:
+    if letra in conteo:
+        conteo[letra] += 1
+print(conteo)
+# %%
+
+especialidades = ("Clínica General", "Pediatría", "Traumatología", "Cardiología")
+
+pacientes = [
+    {"nombre" : "Marcos", "especialidad" : "Pediatría", "atendido" : False},
+    {"nombre" : "Julia", "especialidad" : "Cardiología", "atendido" : False}
+]
+
+for paciente in pacientes:
+    if paciente["especialidad"] in especialidades:
+        paciente["atendido" : True]
+        print(f"{paciente["nombre"]}fue atendido en {paciente["especialidad"]}")
+    else:
+        print(f"{paciente["nombre"]}no fue atendido debido que la especialidad {paciente["especialidad"]} no esta en la lista")
+        
+nombre_pacientes = ""
+corte = "cerrar"
+
+while nombre_pacientes.lower != corte:
+    nombre_paciente = input("Ingrese el nombre del paciente: ").strip().lower()
+    
+    if nombre_paciente != corte:
+        especialidad_paciente = input("Ingrese la especialidad: ").strip().title()
+        
+    nuevo_paciente = {"nombre": nombre_paciente, "especialidad" : especialidad_paciente, "atendido" : False}
+        
+    if especialidad_paciente in especialidades:
+        nuevo_paciente["atendido" : True]
+    else:
+        print(f"{nombre_paciente}no fue atendido debido que la especialidad {especialidad_paciente} no esta en la lista")
+    
+    pacientes.append(nuevo_paciente)
+    
+    
+    
+    conteo_especialidad = {}
+    for paciente in pacientes:
+        if paciente["atendido"]:
+            especialidad = paciente["especialidad"]
+            conteo_especialidad[especialidad] = conteo_especialidad.get
+            (especialidad, 0) + 1
+            
+print("Reporte final")
+
+for paciente in pacientes:
+    if paciente["atendido"]:
+        estado = "Atendido"
+    else:
+        estado = "Pendiente"
+    
+    estado = "Atendido" if paciente["atendido"] else "Pendiente"
+        
+    print(f"{paciente ["nombre"]}: {estado}")
+    
+print("Resumen de cantidad de pacientes ")
+for especialidad, cantidad in conteo_especialidad.items():
+    print(f"{especialidad}: {cantidad} pacientes atendidos")
+
+    
