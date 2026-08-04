@@ -1,5 +1,6 @@
 print("\n===============================")
 print("=    Calculadora Salominem    =")
+print("=       (+) (-) (*) (/)       =")
 print("===============================")
 
 numero_1 = int(input("\nIngrese el primer numero: "))
