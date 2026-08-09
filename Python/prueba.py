@@ -1,7 +1,7 @@
 productos = ["coca","coca","galleta","fideo","azucar","yerba","jabon","shampoo","pepsi","aceite","sal","caldo","manteca","fideo",]
 
 while True:
-    print("////DRUGSTORE////")
+    print("/////DRUGSTORE/////")
     print("1.Ver productos.. \n2.Agregar producto.. \n3.Eliminar producto.. \n4.Ver productos sin repetir.. \n5.Salir")
     cliente = input("Eligue una opcion: ").strip().lower()
     if cliente == "1":
@@ -21,7 +21,7 @@ while True:
         print(f"Total de productos: {len(productos_unicos)} ")
         print(productos_unicos)
     elif cliente == "5":
-            print("Saliendo del sistema...")
+            print("Saliendo del sistema....")
             break
         
         
