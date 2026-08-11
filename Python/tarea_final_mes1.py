@@ -253,6 +253,11 @@ pacientes_del_dia = [
 {"nombre": "Carla", "especialidad": "Cardiología", "edad": 60}
 ]
 
-for paciente in pacientes_del_dia:
-    print(paciente["nombre"])
-# %%
+pacientes_mayuscula = [paciente["nombre"].upper() for paciente in pacientes_del_dia]
+print(pacientes_mayuscula) 
+
+pacientes_mayores = [paciente["nombre"] for paciente in pacientes_del_dia if paciente["edad"] > 18]  
+print(pacientes_mayores)
+
+especialidades = [paciente["nombre"] for paciente in pacientes_del_dia if paciente["especialidad"]]
+print(especialidades)
