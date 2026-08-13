@@ -66,3 +66,8 @@ with open ("../archivos/lista_tareas.txt", "w", encoding="utf-8") as archivo:
 
 with open ("../archivos/lista_tareas.txt", "a", encoding="utf-8") as archivo:
     archivo.write("panchin\n")
+
+# %%
+linea = "Seba, diego de villarroel, tucuman"
+
+print(linea.split(","))
