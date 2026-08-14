@@ -71,3 +71,11 @@ with open ("../archivos/lista_tareas.txt", "a", encoding="utf-8") as archivo:
 linea = "Seba, diego de villarroel, tucuman"
 
 print(linea.split(","))
+# %%
+linea = "Pancho, diego de villarroel, villa 9 de julio"
+
+print(linea.split(","))
+# %%
+linea = "Miguel, diego de villarroel, la banda"
+
+print(linea.split(","))
