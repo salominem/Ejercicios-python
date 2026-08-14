@@ -21,12 +21,16 @@ respuestas = {
     "que calor hace hoy" : "la verdad que si, esta haciendo mucho calor",
     "que frio hace hoy" : "la verdad que si, está re fresco",
     "hoy juego partido" : "que grande!!!, dedicame un par de triples jajaj",
+    "tenemos que ganar si o si" : "a ponerte las pilas entonces!!",
     "extraño a mi perrito" : "el seguramente te debe estar extrañando tambien!",
     "quiero ser el mejor" : "y vas a ser el mejor.",
     "tengo que trabajar" : "me parece bien, hay que trabajar para tener platita",
     "estoy feliz hoy" : "esoo bien ahi papaaa, asi tiene que ser siempre!",
     "quiero seguir programando" : "me parece perfecto, hay que mejorar dia a dia!",
     "sale lolcito" : "aprende a jugar bronce jajaja",
+    "estoy practicando un sistema de bar" : "perfecto y como te está yendo?",
+    "vendi un sistema" : "genial que bueno che!",
+    "quiero trabajar de programador" : "tranqui, vas a conseguir un trabajo",
     "chau chimuelo" : "chau Sebastian!, que tengas un lindo dia.",
 }
 
