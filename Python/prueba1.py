@@ -33,6 +33,8 @@ respuestas = {
     "quiero trabajar de programador" : "tranqui, vas a conseguir un trabajo",
     "chau chimuelo" : "chau Sebastian!, que tengas un lindo dia.",
     "quiero asado" : "está lindo para comer asado",
+    "quiero hacer el amor" : "jajajajajajajajaj",
+    "como me hace renegar boquita" : "ajjajaj parece que si che, siempre hace renegar boquita",
 }
 
 while True:
