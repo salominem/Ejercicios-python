@@ -40,6 +40,7 @@ respuestas = {
     "que rico es el locro" : "es riquisimo!!",
     "que rica es la pizza" : "es riquisima!!",
     "sera que podre entrar a trabajar ahi?" : "hay que esperar, paciencia!",
+    "tendria que reivindicarme" : "y eso haras bro",
 }
 
 while True:
