@@ -32,6 +32,7 @@ respuestas = {
     "vendi un sistema" : "genial que bueno che!",
     "quiero trabajar de programador" : "tranqui, vas a conseguir un trabajo",
     "chau chimuelo" : "chau Sebastian!, que tengas un lindo dia.",
+    "quiero asado" : "está lindo para comer asado",
 }
 
 while True:
