@@ -35,6 +35,7 @@ respuestas = {
     "quiero asado" : "está lindo para comer asado",
     "quiero hacer el amor" : "jajajajajajajajaj",
     "como me hace renegar boquita" : "ajjajaj parece que si che, siempre hace renegar boquita",
+    "hay que ganar como sea" : "si!! como sea loco",
 }
 
 while True:
