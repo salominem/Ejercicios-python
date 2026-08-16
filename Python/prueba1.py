@@ -37,6 +37,9 @@ respuestas = {
     "como me hace renegar boquita" : "ajjajaj parece que si che, siempre hace renegar boquita",
     "hay que ganar como sea" : "si!! como sea loco", 
     "sera bueno trabajar ahi?" : "hay que probar",
+    "que rico es el locro" : "es riquisimo!!",
+    "que rica es la pizza" : "es riquisima!!",
+    "sera que podre entrar a trabajar ahi?" : "hay que esperar, paciencia!",
 }
 
 while True:
