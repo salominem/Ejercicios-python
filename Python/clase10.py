@@ -79,3 +79,4 @@ print(linea.split(","))
 linea = "Miguel, diego de villarroel, la banda"
 
 print(linea.split(","))
+# %%
