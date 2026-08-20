@@ -27,3 +27,4 @@ def calculo_total(precio, cantidad):
 
 total = calculo_total(1500, 3)
 print(total)
+# %%
